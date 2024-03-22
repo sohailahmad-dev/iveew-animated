@@ -37,7 +37,7 @@ import Footer from '../../components/footer/Footer';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Padding } from '@mui/icons-material';
+import Typewriter from 'typewriter-effect'
 
 export default function Home() {
     let [hideModal, setHideModal] = useState(true)
@@ -126,12 +126,18 @@ export default function Home() {
                 <section className='home-banner-box'>
                     <Grid container spacing={5}>
                         <Grid item sm={8} >
-                            <div className="home-banner-heading">
-                                The AI Powered tools <br />
-                                to connect customers <br />
-                                and guests.
+                            <div className="home-banner-heading-box">
+                                <Typewriter
+                                    options={{
+                                        autoStart: true,
+                                        loop: true,
+                                        delay: 50,
+                                        strings: ['The AI Powered tools to connect customers and guests.'],
+                                        wrapperClassName: 'home-banner-heading'
+                                    }}
+                                />
+                                <Btn label='Get Started' />
                             </div>
-                            <Btn label='Get Started' />
                         </Grid>
                         <Grid item sm={4} >
                             <div className="home-banner-right">
@@ -144,7 +150,7 @@ export default function Home() {
                 </section>
                 {/* section 2  */}
                 <section className='home-sec2-box padding'>
-                    <div className="global-heading1">Empower all to spend <br />confidently.</div>
+                    <div className="global-heading1" data-aos="fade-up" >Empower all to spend <br />confidently.</div>
                     <div className="home-sec2-content global-text1">As a finance leader, you love control. But most company spend happens outside your team. So how do you empower everyone — everywhere — to spend wisely? Top companies are doing just that with iVeeW.
                     </div>
                     <div className='home-sec2-imgs' >
@@ -154,7 +160,7 @@ export default function Home() {
                 </section>
                 {/* section 3  */}
                 <section className='home-sec3-box padding'>
-                    <div className="global-heading1">Consolidate all spending onto <br /> one platform.</div>
+                    <div className="global-heading1" data-aos="fade-up">Consolidate all spending onto <br /> one platform.</div>
                     <div className="global-text1 home-sec2-content">Everything you need to control spend before it happens and empower teams confidently.</div>
                     <div className="">
                         <Grid container spacing={3}>
@@ -178,7 +184,7 @@ export default function Home() {
                 </section>
                 {/* section 4  */}
                 <section className='home-sec4-box padding'>
-                    <div className="global-heading1">Spend smarter at every stage <br /> of growth.</div>
+                    <div className="global-heading1" data-aos="fade-up" >Spend smarter at every stage <br /> of growth.</div>
                     <div className='margin-home'>
                         <Grid container spacing={5}>
                             <Grid item md={4} sm={6} xs={12}>
@@ -195,7 +201,7 @@ export default function Home() {
                 </section>
                 {/* section 5  */}
                 <section className="home-sec5-box padding">
-                    <div className="global-heading1">Give your resources team <br /> superpowers</div>
+                    <div className="global-heading1" data-aos="fade-up">Give your resources team <br /> superpowers</div>
                     <div className="global-text1 home-sec2-content">Maximize every resource with AI-powered controls, payments, and accounting.</div>
                     <div className="sec5-cards-box">
                         <CardLeft
@@ -266,7 +272,7 @@ export default function Home() {
                 {/* section 7  */}
                 <section>
                     <div className="home-sec7-box padding">
-                        <div className="global-heading1">Everything you need to <br /> spend smart.</div>
+                        <div className="global-heading1" data-aos="fade-up">Everything you need to <br /> spend smart.</div>
                         <div className='margin-home'>
                             <Grid container spacing={5}>
                                 {
@@ -293,7 +299,7 @@ export default function Home() {
                 </section>
                 {/* section 8  */}
                 <section className="home-sec8-box padding">
-                    <div className="global-heading1">Insights on AI- powered iveew chatbot.</div>
+                    <div className="global-heading1" data-aos="fade-up" >Insights on AI- powered iveew chatbot.</div>
                     <div className='home-slider margin-home' >
                         <Slider
                             ref={slider => {

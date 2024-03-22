@@ -16,7 +16,7 @@ export const CardRight = ({ img, heading, content }) => {
                         </div>
                     </Grid>
                     <Grid item sm={6} xs={12}>
-                        <img src={img} alt="img" width='100%' />
+                        <img src={img} alt="img" width='100%' data-aos="fade-left" />
                     </Grid>
                 </Grid >
             </div>

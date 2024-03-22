@@ -9,7 +9,7 @@ export const CardLeft = ({ img, heading, content }) => {
             <div className="cardLeft-desktop" >
                 <Grid container spacing={5}>
                     <Grid item sm={6} xs={12}>
-                        <img src={img} alt="img" width='100%' />
+                        <img src={img} alt="img" width='100%' data-aos="fade-right" />
                     </Grid>
                     <Grid item sm={6} xs={12}>
                         <div className="home-card-data">
@@ -30,7 +30,7 @@ export const CardLeft = ({ img, heading, content }) => {
                         </div>
                     </Grid>
                     <Grid item sm={6} xs={12}>
-                        <img src={img} alt="img" width='100%' />
+                        <img src={img} alt="img" width='100%' data-aos="fade-left" />
                     </Grid>
                 </Grid >
             </div>
