@@ -244,7 +244,7 @@ export default function Home() {
                     <div>
                         <Grid container spacing={5} mt={15}>
                             <Grid item sm={5} xs={12} >
-                                <img src={img15} alt="img" width="100%" />
+                                <img src={img15} alt="img" width="100%" data-aos="flip-left" />
                             </Grid>
                             <Grid item sm={6} xs={12} mt={7} >
                                 <img src={img16} alt="img" width='250px' />
