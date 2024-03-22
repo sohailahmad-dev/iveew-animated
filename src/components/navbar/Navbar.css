@@ -1,0 +1,161 @@
+.navBar-Parent {
+    position: fixed;
+    width: 100%;
+    z-index: 20000;
+}
+
+.navBar-note {
+    background: #101010;
+    color: white;
+    font-size: 13px;
+    padding-top: 7px;
+    height: 35px;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+}
+
+.navBar {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    /* justify-content: space-between; */
+    padding: 0px 4%;
+    height: 65px;
+    border-bottom: 1px solid gray;
+    z-index: 100000000000;
+}
+
+.logo-nb {
+    width: 120px;
+    cursor: pointer;
+}
+
+.nb-links-box {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.link-nb {
+    color: #252525;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 3px 5px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+
+}
+
+.link-nb:hover {
+    border: 1px solid lightgray;
+    transition: 0.5s ease;
+}
+
+
+.link-nb1 {
+    color: #252525;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 3px 5px;
+}
+
+.link-nb1:hover {
+    font-family: Poppins-SemiBold;
+    transition: 0.5s ease;
+}
+
+
+.icon {
+    display: none;
+}
+
+.navBtn {
+    width: 184px;
+    height: 45px;
+    background-color: var(--primary-bg);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBtn:hover {
+    opacity: 0.9;
+    transition: 0.5s ease;
+}
+
+
+
+@media screen and (max-width:900px) {
+
+    /* .navBar {
+        height: 60px;
+    } */
+
+
+    .navLinks {
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        z-index: 88;
+        top: 0px;
+        right: -300px;
+        width: 300px;
+        min-height: 120vh;
+        background-color: white;
+        border: 1px solid lightgray;
+        transition: 1s ease;
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+
+    .active {
+        right: 0px;
+    }
+
+    .link {
+        line-height: 50px;
+        color: white;
+    }
+
+    .icon {
+        display: block;
+    }
+
+
+}
+
+@media screen and (max-width:699px) {
+    .global-heading1 {
+        font-family: Poppins-Bold, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 26px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .global-text1 {
+        font-size: 14px;
+    }
+
+    .navBar-note {
+        height: 45px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

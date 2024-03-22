@@ -1,0 +1,68 @@
+.f-box {
+    background-color: #111111;
+    min-height: 200px;
+    color: white;
+}
+
+.f-logo {
+    width: 130px;
+    cursor: pointer;
+}
+
+.f-linkBold {
+    font-family: Poppins-Bold;
+    font-size: 19px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.f-link {
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: #BCBDBD;
+}
+
+.f-linkBold:hover,
+.f-link:hover {
+    opacity: 0.9;
+    transition: 0.5s ease;
+}
+
+.f-bottom {
+    margin-top: 7%;
+}
+
+.f-bottom-socials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.f-bottom-socials img {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.f-bottom-socials img:hover {
+    opacity: 0.9;
+    transition: 0.5s ease;
+}
+
+.f-stores-imgs {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.f-stores-imgs img {
+    width: 130px;
+    cursor: pointer;
+
+}
+
+.f-stores-imgs img:hover {
+    opacity: 0.9;
+    transition: 0.5s ease;
+}
